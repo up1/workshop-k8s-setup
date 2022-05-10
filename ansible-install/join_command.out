@@ -1,0 +1,1 @@
+kubeadm join 10.148.0.26:6443 --token xivs5a.ox9ty53iqwf7gb83 --discovery-token-ca-cert-hash sha256:d23749b6ec2a6f06aa37099c71fb4d667e0e093ba72f37ac8f0b64b447b31f9f
