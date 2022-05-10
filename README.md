@@ -1,3 +1,3 @@
 # Setup Kubernetes cluster
 * Command line
-* Ansible
+* [Ansible](ansible-install)
