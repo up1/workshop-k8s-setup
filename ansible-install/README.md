@@ -6,6 +6,20 @@
 
 โดยกำหนด ip ของแต่ละ node ไว้ในไฟล์ ansible-hosts.txt
 
+```
+[all]
+34.143.254.158
+34.142.197.246
+34.143.227.170
+
+[kube_server]
+34.143.254.158
+
+[kube_agents]
+34.142.197.246
+34.143.227.170
+```
+
 ### Step 2 :: ตรวจสอบว่าสามารถเข้าใช้งานทุก ๆ node ผ่าน ssh ได้หรือไม่
 ```
 $ansible -i ansible-hosts.txt all -u somkiat -m ping
