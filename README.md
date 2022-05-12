@@ -1,3 +1,3 @@
 # Setup Kubernetes cluster
-* Command line
+* [Command line](manual.md)
 * [Ansible](ansible-install)
