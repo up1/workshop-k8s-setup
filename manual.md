@@ -81,6 +81,27 @@ $kubelet --help
 
 Initial Master node
 * [Solved problen when can't not initial](https://stackoverflow.com/questions/52119985/kubeadm-init-shows-kubelet-isnt-running-or-healthy)
+
+### More error
+```
+$sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+
+[init] Using Kubernetes version: v1.24.0
+[preflight] Running pre-flight checks
+error execution phase preflight: [preflight] Some fatal errors occurred:
+	[ERROR CRI]: container runtime is not running: output: time="2022-05-12T17:40:15Z" level=fatal msg="getting status of runtime: rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService"
+, error: exit status 1
+[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`
+To see the stack trace of this error execute with --v=5 or higher
+```
+Solution
+```
+$rm /etc/containerd/config.toml
+$sudo systemctl restart containerd
+```
+
+
+Initial cluster
 ```
 $sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
