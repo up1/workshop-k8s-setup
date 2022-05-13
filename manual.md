@@ -166,7 +166,7 @@ master   Ready      control-plane,master   2m46s   v1.23.5
 
 Copy from step 3
 ```
-$kubeadm join 159.223.87.252:6443 --token x5mnpi.zwuvvgi3uhheyhbi \
+$sudo kubeadm join 159.223.87.252:6443 --token x5mnpi.zwuvvgi3uhheyhbi \
 	--discovery-token-ca-cert-hash sha256:c00b886e00f16eb7f0e947c1cf7ad4f6c7f4002cecf5f3b5a097c5295ba19b3e
 
 
