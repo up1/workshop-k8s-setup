@@ -200,6 +200,7 @@ nginx   1/1     Running   0          33s   10.244.1.2   worker   <none>         
 ```
 $kubectl cordon <node name>
 $kubectl drain <node name>
+$kubectl delete node <node name>
 
 $sudo systemctl stop kubelet
 $sudo systemctl disable kubelet
