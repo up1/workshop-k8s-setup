@@ -196,4 +196,13 @@ NAME    READY   STATUS    RESTARTS   AGE   IP           NODE     NOMINATED NODE 
 nginx   1/1     Running   0          33s   10.244.1.2   worker   <none>           <none>
 ```
 
+## Remove node
+```
+$kubectl cordon <node name>
+$kubectl drain <node name>
+
+$sudo systemctl stop kubelet
+$sudo systemctl disable kubelet
+```
+
 Ready to go next ...
