@@ -96,7 +96,7 @@ To see the stack trace of this error execute with --v=5 or higher
 ```
 Solution
 ```
-$rm /etc/containerd/config.toml
+$sudo rm /etc/containerd/config.toml
 $sudo systemctl restart containerd
 ```
 
